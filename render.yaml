@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mi-servicio
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    runtime: python-3.10
